@@ -16,7 +16,7 @@ def get_total_records(input_file):
 
         return total_records
 
-def affipred_pred(input_file, output_file="output.csv"):
+def affipred_pred(input_file, output_file="output.csv", type = "VCF"):
 
     f2 = VariantFile(input_file)
 
