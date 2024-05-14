@@ -3,7 +3,7 @@
 ## Usage:
 First, install the tool using pip.
 ```
-pip install -i https://test.pypi.org/simple/ affipred==0.0.2
+pip install affipred
 ```
 
 Provide input and output files with relative or absolute path:
