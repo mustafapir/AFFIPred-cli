@@ -16,7 +16,7 @@ def get_total_records(input_file):
 
         return total_records
 
-def affipred(input_file, output_file="output.csv", type = "VCF"):
+def affipred(input_file, output_file="output.csv"):
 
     f2 = VariantFile(input_file)
 
@@ -64,8 +64,13 @@ def affipred(input_file, output_file="output.csv", type = "VCF"):
         dfx1 = dfx[num - 1:numx * j - 1]
         dfx1 = [value for value in dfx1 if value is not None]
 
-        response = requests.post(api_url, json=dfx1, params=params)
-        out = response.json()
+        while True:
+            try:
+                response = requests.post(api_url, json=dfx1, params=params)
+                out = response.json()
+            except:
+                continue
+            break
 
         df2 = pd.DataFrame({
             'input_str': [None] * len(dfx1),
