@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fhand:
 
 setuptools.setup(
     name="affipred",
-    version="0.1.0",
+    version="0.1.2",
     author="Mustafa S. Pir",
     author_email="mustafapir29@gmail.com",
     description=("AlphaFold based Functional Impact Prediction of Missense Variations"),
