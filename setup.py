@@ -25,7 +25,7 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "affipred_pred = AFFIPred_cli.cli:main",
+            "affipred = AFFIPred_cli.cli:main",
         ]
     }
 )

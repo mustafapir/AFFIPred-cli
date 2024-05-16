@@ -2,7 +2,7 @@
 The command-line interface for AFFIPred
 """
 import argparse
-from .affipred import affipred_pred
+from .affipred import affipred
 
 
 def main():
@@ -18,7 +18,7 @@ def main():
         help=("Name of the output file. It will be placed under the current directory.")
     )
     args = parser.parse_args()
-    affipred_pred(input_file=args.input, output_file=args.output)
+    affipred(input_file=args.input, output_file=args.output)
     print("Success!")
 
 if __name__ == "__main__":

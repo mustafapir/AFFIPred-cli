@@ -8,7 +8,7 @@ pip install affipred
 
 Provide input and output files with relative or absolute path:
 ```
-affipred_pred variants.vcf -o affipred_results.csv
+affipred variants.vcf -o affipred_results.csv
 ```
 The input should be a `.vcf` file while the output file name extension should be `.csv`. 
 

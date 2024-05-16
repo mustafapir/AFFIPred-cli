@@ -1,1 +1,1 @@
-from .affipred import affipred_pred
+from .affipred import affipred
